@@ -1,4 +1,4 @@
-package br.com.pratica.crudestudante.constrollers;
+package br.com.pratica.crudestudante.controllers;
 
 import java.util.List;
 import java.util.Optional;
