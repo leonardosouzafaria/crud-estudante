@@ -2,14 +2,18 @@ package br.com.pratica.crudestudante.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.pratica.crudestudante.models.Estudante;
 import br.com.pratica.crudestudante.models.Usuario;
 import br.com.pratica.crudestudante.repositorys.EstudanteRepository;
 import br.com.pratica.crudestudante.repositorys.UsuarioRepository;
+import io.swagger.annotations.Api;
 
 @RestController
+@Api(value="Chamadas de controle da aplicação")
+@RequestMapping("/aplicacao")
 public class AplicacaoController {
 	
 	@Autowired

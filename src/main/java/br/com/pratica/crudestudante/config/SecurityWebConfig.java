@@ -10,7 +10,7 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 @Configuration
 @EnableWebSecurity
 public class SecurityWebConfig extends WebSecurityConfigurerAdapter {
-
+	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests()
@@ -23,7 +23,7 @@ public class SecurityWebConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(AuthenticationManagerBuilder builder) throws Exception {
 		builder.inMemoryAuthentication()
 			.passwordEncoder(NoOpPasswordEncoder.getInstance())		
-			.withUser("admin")
+			.withUser("usuario")
 			.password("123")
 			.roles("USER")
 			.and()
